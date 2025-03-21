@@ -298,8 +298,7 @@ h4{
     border-radius: 10px;
     box-shadow: 5px 5px 5px var(--dark-gray); 
     line-height: 1.5;
-    width: 80%;
-    
+    box-sizing: 80%;
 }
 
 footer {
