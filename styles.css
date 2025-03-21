@@ -1,0 +1,318 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ROOT VARIABLES */
+:root{
+    --font-heading: 'Kavoon', serif;
+    --font-body: 'Inter', sans-serif;
+
+    --h1-size: 3em;
+    --nav-h2-size: 1.5em;
+    --h2-size: 2em;
+    --h3-size: 1.5em;
+    --h4-size: 1.15em;
+
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #FFFFFF;
+    
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+body{
+    font-family: var(--font-body);
+    background-color: var(--lavender);
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+main{
+    background-color: var(--purple);
+    margin: 0 auto;
+    max-width: 450px;
+    align-items: center;
+}
+
+/* header */
+header{
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 12px 0;
+    max-width: 450px;
+    margin: 0 auto;
+    
+}
+
+header p{
+    font-style: italic;
+    padding: 10px 0 50px 0;
+}
+
+header h1, h2 {
+    font-family: var(--font-heading);
+    font-size: var(--h1-size);
+}
+
+/* nav menu */
+nav{
+    background-color: var(--yellow);
+    padding: 15px;
+}
+
+nav ul{
+    list-style: none;
+    
+}
+
+nav ul li{
+    margin: 10px 0;
+    background-color: var(--white);
+}
+
+nav ul li a{
+    font-weight: bold;
+    border-radius: 8px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--purple);
+    text-transform: uppercase;
+}
+
+nav h2{
+    font-size: var(--nav-h2-size);
+    font-style: italic;
+    font-family: var(--font-body);
+    font-weight: bold;
+    color: var(--dark-gray);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* heading */
+h2{
+    font-size: var(--h2-size);
+    font-family: var(--font-heading);
+    color: var(--white);
+    text-align: left;
+    
+}
+
+h3{
+    font-size: var(--h3-size);
+    font-weight: bold;
+    color: var(--yellow);
+    text-align: left;
+    padding-left: 10px;
+}
+
+h4{
+    font-size: var(--h4-size);
+    color: var(--purple);
+    font-weight: bold;
+}
+
+/* section */
+
+#services section{
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+    text-align: left;
+}
+
+#services h2{
+    padding-left: 10px;
+}
+
+#group-coaching section{
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+    text-align: left;
+}
+
+#workshops section{
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+    text-align: left;
+}
+
+#online section{
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+    text-align: left;
+}
+
+/*-- why-choose-us-section --*/
+
+#why-choose-us{
+    background-color: var(--pink);
+}
+
+#why-choose-us h2{
+    padding: 10px 0 0 10px;
+}
+
+#why-choose-us ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    list-style: none;
+    padding: 0 10px 10px 10px;
+    margin: 20px 10px;
+}
+
+#why-choose-us li{
+    background-color: var(--teal);
+    padding: 30px 0;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#why-choose-us li.one{ 
+    background-color: var(--teal);
+}
+#why-choose-us li.two{
+    background-color: var(--lavender);
+}
+#why-choose-us li.three{
+    background-color: var(--yellow);
+}
+#why-choose-us li.four{
+    background-color: var(--white);
+}
+
+/*--pricing section--*/
+
+#pricing{
+    padding-bottom: 5px;
+}
+#pricing h2{
+    padding-left: 10px;
+}
+#pricing h3{
+    padding: 10px;
+}
+#pricing table{
+    margin: 0 auto;
+    border:1px solid var(--yellow);
+}
+
+#pricing th{
+    background-color: var(--yellow);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#pricing td{
+    background-color: var(--white);
+    padding: 10px;
+    border:1px solid var(--yellow);
+}
+
+/*-- first-step section--*/
+
+#first-step{
+    background-color: var(--pink);
+    color: var(--white);
+    text-align: left;
+    padding: 15px 15px;
+}
+
+#first-step h2{
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+#first-step a {
+    display: block;
+    margin: 10px auto 0 auto;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--dark-gray); 
+    
+}
+
+footer {
+    max-width: 450px;
+    background-color: var(--purple);
+    color: var(--white);
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--font-body);
+}
+
+footer a, footer p{
+    color: var(--white);
+    text-decoration: none;
+    padding: 20px 0;
+}
+
