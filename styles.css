@@ -215,7 +215,7 @@ h4{
 
 #why-choose-us ul {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 200px 200px;
     gap: 20px;
     list-style: none;
     padding: 0 10px 10px 10px;
