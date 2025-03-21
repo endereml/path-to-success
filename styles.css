@@ -211,7 +211,6 @@ h4{
 
 #why-choose-us h2{
     padding: 10px 0 0 10px;
-    font-size: var(--h2-size);
 }
 
 #why-choose-us ul {
@@ -228,7 +227,6 @@ h4{
     padding: 30px 0;
     border-radius: 10px;
     font-weight: bold;
-    font-size:larger;
 }
 
 #why-choose-us li.one{ 
@@ -300,7 +298,7 @@ h4{
     border-radius: 10px;
     box-shadow: 5px 5px 5px var(--dark-gray); 
     line-height: 1.5;
-    
+    box-sizing: 350px;
 }
 
 footer {
