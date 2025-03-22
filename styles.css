@@ -301,7 +301,7 @@ h4{
     border-radius: 10px;
     box-shadow: 5px 5px 5px var(--dark-gray); 
     line-height: 1.5;
-    box-sizing: 350px;
+    box-sizing:border-box;
 }
 
 footer {
